@@ -18,7 +18,7 @@ It takes three command-line arguments after script name as follows:<br/>
       or type the word **'domain'** if you are going to check a **domain**,<br/>
       or type the word **'ip-address'** if you are going to check an **ip-address**<br/>
   **3**- The url / hash / domain / ip you want to check<br/><br/>
-So for exampl, a correct usage will look like:<br/>
+So for example, a correct usage will look like:<br/>
   ```bash
   python3 check.py [your_api_key] url google.com
   or
