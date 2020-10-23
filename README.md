@@ -1,23 +1,24 @@
 # What's Check? ![Python 3](https://img.shields.io/badge/Python-3-brightgreen.svg)
 check.py is a python script that takes IP OR Domain OR URL OR Hash, submit it to virustotal.com for analysis using their API and returns the result as either Malicious or Clean. A single detection qualifies for being marked as malicious.
 # Requirements
-  1- Get your 'API key' by registering at https://www.virustotal.com/ <br/>
+  1- Get your 'API key' by registering at https://www.virustotal.com/ <br/><br/>
   2- Install requests<br/>
   ```bash
   pip install requests
   ```
+  <br/>
   3- Download check.py script using the following command:
   ```bash
-  git clone https://github.com/m074mm4d/Check
+  git clone https://github.com/m074mm4d/Check/
   ```
 # USAGE
 It takes three command-line arguments after script name as follows:<br/>
-  **1**- Your **API key**<br/>
+  **1**- Your **API key**<br/><br/>
   **2**- Type the word **'url'** if you are going to check a **url**,<br/>
     or type the word **'hash'** if you are going to check a **hash**,<br/>
     or type the word **'domain'** if you are going to check a **domain**,<br/>
-    or type the word **'ip-address'** if you are going to check an **ip-address**<br/>
-  **3**- The url / hash / domain / ip you want to check<br/>
+    or type the word **'ip-address'** if you are going to check an **ip-address**<br/><br/>
+  **3**- The url / hash / domain / ip you want to check<br/><br/>
 So for exampl, a correct usage will look like:<br/>
   ```bash
   python3 check.py [your_api_key] url google.com
