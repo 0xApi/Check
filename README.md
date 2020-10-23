@@ -6,6 +6,10 @@ check.py is a python script that takes IP OR Domain OR URL OR Hash, submit it to
   ```bash
   pip install requests
   ```
+  3- Download check.py script using the following command:
+  ```bash
+  git clone github.com/m074mm4d/Check
+  ```
 # USAGE
 It takes three command-line arguments after script name as follows:<br/>
   **1**- Your **API key**<br/>
