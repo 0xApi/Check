@@ -1,32 +1,40 @@
-# VirusTotal
-# Name
-check.py
-# Description
+# What's Check? ![Python 3](https://img.shields.io/badge/Python-3-brightgreen.svg)
 check.py is a python script that takes IP OR Domain OR URL OR Hash, submit it to virustotal.com for analysis using their API and returns the result as either Malicious or Clean. A single detection qualifies for being marked as malicious.
+# Requirements
+  1- Get your 'API key' by registering at https://www.virustotal.com/ <br/>
+  2- Install requests<br/>
+  ```bash
+  pip install requests
+  ```
 # USAGE
 It takes three command-line arguments after script name as follows:<br/>
-  1- The script name 'check.py'<br/>
-  2- Your API**key**<br/>
-  3- The type of the item you want to search for, which will be either: **url** or **hash** or **domain** or **ip-address**<br/>
-  4- The url / hash / domain / ip you want to check<br/>
+  **1**- Your **API key**<br/>
+  **2**- Type the word **'url'** if you are going to check a **url**,<br/>
+  or type the word **'hash'** if you are going to check a **hash**,<br/>
+  or type the word **'domain'** if you are going to check **domain**,<br/>
+  or type the word **'ip-address'** if you are going to check **ip-address**<br/>
+  **3**- The url / hash / domain / ip you want to check<br/>
 So for exampl, a correct usage will look like:<br/>
-  ```python
-  check.py oerth0KEY_Exapmle43roi url wwwdotexampledotcom
+  ```bash
+  python3 check.py [your_api_key] url google.com
   or
-  check.py oerth0KEY_Exapmle43roi ip-address 255:255:255:255
+  python3 check.py [your_api_key] ip-address 255:255:255:255
   or
-  check.py oerth0KEY_Exapmle43roi hash dlgh034tj00000HASH_VALUE000dljgkhjdfgkj34
+  python3 check.py [your_api_key] hash 61D071CE81241301DB7F7231AEDE729EEBA335D438494CE80D7D28E67A49B005
   or
-  check.py oerth0KEY_Exapmle43roi domain domain_name
+  python3 check.py [your_api_key] domain googler.cloud
   ```
 # OUTPUT
 The ouput will be either:<br/>
-  1- Clean: for clean items<br/>
-  2- Malicious: for malicious items<br/>
+  1- Clean<br/>
+  2- Malicious<br/>
   3- The item you searched for was not present in VirusTotal's dataset.<br/>
   4- Connection error.<br/>
-  5- Usage message for input error.<br/>
-  6- Forbidden. You don't have enough privileges to make the request. If key is wrong.<br/>
+  5- Usage message for input errors.<br/>
+  6- Forbidden. You don't have enough privileges to make the request.<br/>
+      If the key is wrong.<br/>
   7- Bad request. This can be caused by missing arguments or arguments with wrong values.<br/>
   8- Request rate limit exceeded, Please wait!<br/>
+      The Public API is limited to 4 requests per minute.<br/>
   9- Responce code error!
+  10- The requested item is still queued for analysis.
