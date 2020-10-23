@@ -14,9 +14,9 @@ check.py is a python script that takes IP OR Domain OR URL OR Hash, submit it to
 It takes three command-line arguments after script name as follows:<br/>
   **1**- Your **API key**<br/>
   **2**- Type the word **'url'** if you are going to check a **url**,<br/>
-    or type the word **'hash'** if you are going to check a **hash**,<br/>
-    or type the word **'domain'** if you are going to check a **domain**,<br/>
-    or type the word **'ip-address'** if you are going to check an **ip-address**<br/>
+      or type the word **'hash'** if you are going to check a **hash**,<br/>
+      or type the word **'domain'** if you are going to check a **domain**,<br/>
+      or type the word **'ip-address'** if you are going to check an **ip-address**<br/>
   **3**- The url / hash / domain / ip you want to check<br/><br/>
 So for exampl, a correct usage will look like:<br/>
   ```bash
