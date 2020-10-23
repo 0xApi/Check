@@ -40,5 +40,5 @@ The ouput will be either:<br/>
   7- Bad request. This can be caused by missing arguments or arguments with wrong values.<br/>
   8- Request rate limit exceeded, Please wait!<br/>
       The Public API is limited to 4 requests per minute.<br/>
-  9- Responce code error!
+  9- Responce code error!<br/>
   10- The requested item is still queued for analysis.
