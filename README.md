@@ -20,13 +20,13 @@ It takes three command-line arguments after script name as follows:<br/>
   **3**- The url / hash / domain / ip you want to check<br/><br/>
 So for example, a correct usage will look like:<br/>
   ```bash
-  python3 check.py [your_api_key] url google.com
+  python check.py [your_api_key] url google.com
   or
-  python3 check.py [your_api_key] ip-address 255:255:255:255
+  python check.py [your_api_key] ip-address 255:255:255:255
   or
-  python3 check.py [your_api_key] hash 61D071CE81241301DB7F7231AEDE729EEBA335D438494CE80D7D28E67A49B005
+  python check.py [your_api_key] hash 61D071CE81241301DB7F7231AEDE729EEBA335D438494CE80D7D28E67A49B005
   or
-  python3 check.py [your_api_key] domain googler.cloud
+  python check.py [your_api_key] domain googler.cloud
   ```
 # OUTPUT
 The ouput will be either:<br/>
