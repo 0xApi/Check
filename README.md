@@ -8,7 +8,7 @@ check.py is a python script that takes IP OR Domain OR URL OR Hash, submit it to
   ```
   3- Download check.py script using the following command:
   ```bash
-  git clone https://github.com/0xApi/Check/
+  git clone https://github.com/malwarejuice/Check/
   ```
 # USAGE
 It takes three command-line arguments after script name as follows:<br/>
